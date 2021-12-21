@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chats prototype</title>
+</head>
+<script src="assets/vue.global.min.js"></script>
+<link rel="stylesheet" href="all.css">
+<body>
+<div class="showall">
+<div id="case1">
+    <div class="phonecase">
+        <img class="caseimg" src="assets/case.png">
+        <chat :from="from" :to_name="to_name" :pa="pa" :pb="pb"></chat>
+    </div>
+</div>
+<div id="case1x">
+    <div class="phonecase">
+        <img class="caseimg" src="assets/case.png">
+        <chat :from="from" :to_name="to_name" :pa="pa" :pb="pb"></chat>
+    </div>
+</div>
+<div id="case2">
+    <div class="phonecase">
+        <img class="caseimg" src="assets/case.png">
+        <div class="show-area" id="show02">
+            <status-bar></status-bar>
+            <top-banner :title="toptitle" :ontheright="''"></top-banner>
+            <div class="v-body-content">
+                <privacy-settings></privacy-settings>
+            </div>
+            <navigation-bar></navigation-bar>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
